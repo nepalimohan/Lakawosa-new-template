@@ -43,6 +43,15 @@
             {% endif %}
             href="{% url 'contact' %}">Contact Us</a>
           </li>
+          <li class="nav-item">
+            <a 
+            {% if 'login' in request.path %}
+            class="nav-link active"
+            {% else %}
+            class="nav-link"
+            {% endif %}
+            href="#">login</a>
+          </li>
         </ul>
       </div>
     </div>
