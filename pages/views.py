@@ -9,3 +9,6 @@ def about(request):
 
 def contact(request):
     return render(request, 'pages/contact.html')
+
+def products(request):
+    return render(request, 'pages/products.html')
